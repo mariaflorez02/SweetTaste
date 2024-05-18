@@ -1,0 +1,187 @@
+ /*------ fuentes importadas -----------*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------- estilos generales -----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.logo img{
+    
+    width: 28%;
+    margin: 2 auto;
+    position:fixed;
+    display:block;
+
+}
+
+/*--------- head-------*/
+header{
+    width: 100vw;
+    font-family: "Quicksand", sans-serif;
+    background-color: #FFE57E;
+    display: block;
+    align-items: center; 
+    border-bottom: solid;  
+    border-bottom-width: 20px;
+    border-bottom-color: #2f1312;
+    position:fixed;
+}
+.contenedormenu {
+    width: 100%;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 30px;
+    color: #2f1312;
+    display: flex;
+    font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+    color: #E9408F;
+}
+.menu-icon{
+    width: 25px;
+}
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+
+/*------ main --------------- */
+main{
+    background-color: #E9408F;
+    border-top: solid  106px #E9408F;
+}
+.cuboimagen {
+    width: 100%;
+    margin:0 auto;   
+}
+.cuboimagen img{
+    width:100%;
+    border-radius: 15px;
+    box-shadow:0px 3px 5px rgba(15,15);
+}
+
+
+/*------- footer --------- */
+footer{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    background-color: #E9408F;
+    display: flex;
+    padding: 50px 30px 80px 30px;
+}
+.creditos{
+    position: relative;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;  
+    margin: 0 auto;
+}
+ .creditos h2 , p{
+    color:#edc5a2 ;
+    margin-bottom: 15px;
+ }
+ .creditos a{
+    color: #2f1312;
+ }
+
+ .creditos a:hover{
+    color:bisque;
+ }
+ .creditos img{
+    width: 20%;     
+ }
+
+ /* ------- diseño responsivo ---------- */
+
+ @media(max-width:768px){
+
+    /* ----- menu de navegacion ------ */
+    header {
+        min-width: 0vh;
+    } 
+    .menu{
+        padding: 30px; 
+        
+    }
+
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 20;
+        right: 0;
+        background-color:#cfb651;
+        display: none;
+        width: max-content;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a {
+        font-size: 18px;
+        color: #2f1312;
+        padding: 15px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .menu .a {
+        width: 40%;
+    }
+
+
+    /* ----- contenido principal del main------ */
+    main{
+    border-top: solid  100px #E9408F;
+    }
+
+    .cuboimagen{
+        width: 100%;
+    }
+
+    /* ----- footer ------ */
+
+    footer{
+        min-width: 0vh;
+        font-size:17px ;
+    }
+
+    .creditos{
+        padding: 20px 0px 20px 30px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .creditos p , h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+
+ }

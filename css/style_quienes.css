@@ -1,0 +1,412 @@
+ /*------ fuentes importadas -----------*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+
+/* ------- estilos generales -----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+/*--------- head-------*/
+header{
+    width: 100vw;
+    font-family: "Quicksand", sans-serif;
+    background-color: #FFE57E;
+    display: block;
+    align-items: center; 
+    position:fixed;
+}
+.contenedormenu {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: solid;  
+    border-bottom-width: 20px;
+    border-bottom-color: #2f1312;
+}
+.menu .logo{
+    width: 14%;
+    position:fixed;
+    display:block;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 30px;
+    color: #2f1312;
+    display: flex;
+    font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+    color: #E9408F;
+}
+.menu-icon{
+    width: 25px;
+}
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+
+
+/*----------main-----------*/
+main{
+    background: linear-gradient( pink,pink, #fc8fa7,#fc8fa7, #E9408F);
+    border-top: solid  106px #fb95ab;
+}
+.tit {
+
+    height: 20vw;
+    width: 100%;
+    background-size: cover;
+    background-position:initial;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-family: "Edu NSW ACT Foundation", cursive;  
+}
+.tit h1{
+    color:#F29D35;
+}
+.texto {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 100px 60px 100px;
+    columns: 2 200px;
+    column-rule: 2px dotted;
+    column-gap: 60px;
+}
+    .texto h1 {
+        font-family: "Quicksand", sans-serif;
+        font-size: 6vw;
+        text-align: center;
+        column-span: all;
+        margin-bottom: 20px;
+        color: #d82d7d;
+    }
+    .texto p {
+        font-size: 40px;
+        margin-bottom: 23px;
+        color: #2f1312;
+    }
+
+
+
+/*---------- footer---------*/
+footer{
+    font-family: "Roboto", sans-serif;
+    background-color: #E9408F;
+    display:flex;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    color: #edc5a2;
+    padding: 0px 60px 0px 90px;
+}
+.contacto h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contacto p{
+    font-size: 30px;
+}
+
+.contacto img {
+    width: 4.5vw;
+}
+
+.creditos{
+    flex-direction: column;
+    padding: 0px 60px 0px 0px;
+}
+.creditos h2 , p{
+    color:#edc5a2 ;
+    margin-bottom: 15px;
+    font-size: 30px;
+ }
+ .creditos a{
+    color: #2f1312;
+ }
+
+ .creditos a:hover{
+    color:bisque;
+ }
+.logofinal{
+    padding: 0px 60px 0px 90px;
+}
+ .logofinal img{
+    width: 12vw;
+ }
+
+      /* ----- medida para tablets grandes  ------ */
+      @media(max-width:1024px) and (min-width:768px){
+        
+        /* -------- footer ---------- */
+        
+            footer{
+                min-width: 0vh;
+                padding-left: 35px;
+        
+            }
+        
+            .contacto{
+                padding:10px;
+                align-items: center;
+                
+            }
+            .contacto h2 {
+                font-size: 20px;
+            }
+            .contacto p{
+                font-size: 20px;
+            }
+        
+            .creditos{
+                padding: 0;
+                flex-direction: column;  
+            }
+            .creditos p , h2 {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .creditos p{
+                font-size:20px ;
+            }
+            .creditos h2{
+                font-size:20px ;
+            }
+        
+            .logofinal{
+                padding: 0;
+                text-align: center;
+            }
+        
+            .logofinal img{
+                width: 16vw;
+                padding-left: 25px;
+            }
+        }
+   /* ----- medida para tablets ------ */
+ @media(max-width:768px ) and (min-width: 480px) {
+
+    /* ----- menu de navegacion ------ */
+    header {
+        min-width: 0vh;
+    } 
+    .menu{
+        padding: 30px; 
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#cfb651;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a {
+        font-size: 18px;
+        color: #2f1312;
+        padding: 15px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .menu .a {
+        width: 40%;
+    }
+
+    .menu .logo{
+        width: 20%;
+    }
+
+
+/* -------- main ---------- */
+
+    main{
+        border-top: solid  100px #E9408F;
+    }
+    .texto p{
+        font-size: 20px;
+    }
+
+
+/* -------- footer ---------- */
+
+    footer{
+        min-width: 0vh;
+        flex-direction: column;
+    }
+
+    .contacto{
+        padding:0;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .contacto h2 {
+        font-size: 20px;
+    }
+    .contacto p{
+        font-size: 20px;
+    }
+
+    .creditos{
+        padding: 0;
+        flex-direction: column;  
+    }
+    .creditos p , h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .creditos p{
+        font-size:20px ;
+    }
+    .creditos h2{
+        font-size:20px ;
+    }
+
+    .logofinal{
+        padding: 0;
+        text-align: center;
+    }
+
+    .logofinal img{
+        width: 20vw;
+    }
+}
+
+   /* ----- medida para celulares  ------ */
+@media(max-width:480px ) {
+
+    /* ----- menu de navegacion ------ */
+    header {
+        min-width: 0vh;
+    } 
+    .menu{
+        padding: 30px; 
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#cfb651;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a {
+        font-size: 18px;
+        color: #2f1312;
+        padding: 15px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .menu .a {
+        width: 40%;
+    }
+
+    .menu .logo{
+        width: 35%;
+    }
+
+
+/* -------- main ---------- */
+
+    main{
+        border-top: solid  100px #E9408F;
+    }
+    .texto p{
+        font-size: 16px;
+    }
+    .texto {
+        padding: 20px 60px 20px 60px;
+    }
+    
+
+
+/* -------- footer ---------- */
+
+    footer{
+        min-width: 0vh;
+        flex-direction: column;
+    }
+
+    .contacto{
+        padding:0;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .contacto h2 {
+        font-size: 15px;
+    }
+    .contacto p{
+        font-size: 15px;
+    }
+
+    .creditos{
+        padding: 0;
+        flex-direction: column;  
+    }
+    .creditos p , h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .creditos p{
+        font-size:15px ;
+    }
+    .creditos h2{
+        font-size:15px ;
+    }
+
+    .logofinal{
+        padding: 0;
+        text-align: center;
+    }
+
+    .logofinal img{
+        width: 20vw;
+    }
+}
+
